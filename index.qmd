@@ -1,3 +1,6 @@
 # Introduction {.unnumbered}
 
 This is my online notebook for COMP/STAT112 course taken at [Macalester College](https://www.macalester.edu/).  Please, use the side bar on the left for navigation.
+
+HELLO VIEWERS I AM CHRISTIAN JONES AND THIS IS
+MY DATA 112 WEBPAGE, ENJOY!
