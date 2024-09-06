@@ -1,3 +1,11 @@
 ---
 title: "Activity 01"
 ---
+### Actvity 1 for my website , im ruining my wbesite rn but its okay cuz i can just 
+disregard all this hopefully
+
+happy <- -12
+happy
+
+DATA_112 <- "awesome"
+DATA_112
