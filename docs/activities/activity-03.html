@@ -211,7 +211,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#adds-the-actual-data" id="toc-adds-the-actual-data" class="nav-link active" data-scroll-target="#adds-the-actual-data"><span class="header-section-number">3.1</span> Adds the actual data</a></li>
+  <li><a href="#adds-the-names-of-the-x-axis-and-y-axis" id="toc-adds-the-names-of-the-x-axis-and-y-axis" class="nav-link" data-scroll-target="#adds-the-names-of-the-x-axis-and-y-axis"><span class="header-section-number">3.2</span> Adds the names of the x-axis and y-axis</a></li>
+  <li><a href="#changes-the-color-of-the-bars-to-blue" id="toc-changes-the-color-of-the-bars-to-blue" class="nav-link" data-scroll-target="#changes-the-color-of-the-bars-to-blue"><span class="header-section-number">3.3</span> Changes the color of the bars to blue</a></li>
+  <li><a href="#changes-the-color-of-the-outline-of-the-bars" id="toc-changes-the-color-of-the-outline-of-the-bars" class="nav-link" data-scroll-target="#changes-the-color-of-the-outline-of-the-bars"><span class="header-section-number">3.4</span> Changes the color of the outline of the bars</a></li>
+  <li><a href="#removes-gray-outline-and-exchnages-it-with-white" id="toc-removes-gray-outline-and-exchnages-it-with-white" class="nav-link" data-scroll-target="#removes-gray-outline-and-exchnages-it-with-white"><span class="header-section-number">3.5</span> removes gray outline and exchnages it with white</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -237,10 +247,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>hikes &lt;- read.csv(“https://mac-stat.github.io/data/high_peaks.csv”)</p>
 <p>head(hikes)</p>
+<section id="adds-the-actual-data" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="adds-the-actual-data"><span class="header-section-number">3.1</span> Adds the actual data</h2>
+<p>ggplot(hikes, aes(x = rating)) + geom_bar()</p>
+</section>
+<section id="adds-the-names-of-the-x-axis-and-y-axis" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="adds-the-names-of-the-x-axis-and-y-axis"><span class="header-section-number">3.2</span> Adds the names of the x-axis and y-axis</h2>
+<p>ggplot(hikes, aes(x = rating)) + geom_bar() + labs(x = “Rating”, y = “Number of hikes”)</p>
+</section>
+<section id="changes-the-color-of-the-bars-to-blue" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="changes-the-color-of-the-bars-to-blue"><span class="header-section-number">3.3</span> Changes the color of the bars to blue</h2>
+<p>ggplot(hikes, aes(x = rating)) + geom_bar(fill = “blue”) + labs(x = “Rating”, y = “Number of hikes”)</p>
+</section>
+<section id="changes-the-color-of-the-outline-of-the-bars" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="changes-the-color-of-the-outline-of-the-bars"><span class="header-section-number">3.4</span> Changes the color of the outline of the bars</h2>
+<p>ggplot(hikes, aes(x = rating)) + geom_bar(color = “orange”, fill = “blue”) + labs(x = “Rating”, y = “Number of hikes”)</p>
+</section>
+<section id="removes-gray-outline-and-exchnages-it-with-white" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="removes-gray-outline-and-exchnages-it-with-white"><span class="header-section-number">3.5</span> removes gray outline and exchnages it with white</h2>
+<p>ggplot(hikes, aes(x = rating)) + geom_bar(color = “orange”, fill = “blue”) + labs(x = “Rating”, y = “Number of hikes”) + theme_minimal()</p>
 
 
 <!-- -->
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -721,7 +751,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-4"><a href="#cb1-4"></a></span>
 <span id="cb1-5"><a href="#cb1-5"></a>hikes &lt;- read.csv("https://mac-stat.github.io/data/high_peaks.csv")</span>
 <span id="cb1-6"><a href="#cb1-6"></a></span>
-<span id="cb1-7"><a href="#cb1-7"></a>head(hikes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-7"><a href="#cb1-7"></a>head(hikes)</span>
+<span id="cb1-8"><a href="#cb1-8"></a></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="fu">## Adds the actual data</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>ggplot(hikes, aes(x = rating)) +</span>
+<span id="cb1-11"><a href="#cb1-11"></a>  geom_bar()</span>
+<span id="cb1-12"><a href="#cb1-12"></a>  </span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="fu">## Adds the names of the x-axis and y-axis</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>ggplot(hikes, aes(x = rating)) +</span>
+<span id="cb1-15"><a href="#cb1-15"></a>  geom_bar() +</span>
+<span id="cb1-16"><a href="#cb1-16"></a>  labs(x = "Rating", y = "Number of hikes")</span>
+<span id="cb1-17"><a href="#cb1-17"></a></span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="fu">## Changes the color of the bars to blue</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a>ggplot(hikes, aes(x = rating)) +</span>
+<span id="cb1-20"><a href="#cb1-20"></a>  geom_bar(fill = "blue") +</span>
+<span id="cb1-21"><a href="#cb1-21"></a>  labs(x = "Rating", y = "Number of hikes")</span>
+<span id="cb1-22"><a href="#cb1-22"></a></span>
+<span id="cb1-23"><a href="#cb1-23"></a><span class="fu">## Changes the color of the outline of the bars</span></span>
+<span id="cb1-24"><a href="#cb1-24"></a>ggplot(hikes, aes(x = rating)) +</span>
+<span id="cb1-25"><a href="#cb1-25"></a>  geom_bar(color = "orange", fill = "blue") +</span>
+<span id="cb1-26"><a href="#cb1-26"></a>  labs(x = "Rating", y = "Number of hikes")</span>
+<span id="cb1-27"><a href="#cb1-27"></a>  </span>
+<span id="cb1-28"><a href="#cb1-28"></a><span class="fu">## removes gray outline and exchnages it with white</span></span>
+<span id="cb1-29"><a href="#cb1-29"></a>ggplot(hikes, aes(x = rating)) +</span>
+<span id="cb1-30"><a href="#cb1-30"></a>  geom_bar(color = "orange", fill = "blue")  +</span>
+<span id="cb1-31"><a href="#cb1-31"></a>  labs(x = "Rating", y = "Number of hikes") +</span>
+<span id="cb1-32"><a href="#cb1-32"></a>  theme_minimal()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

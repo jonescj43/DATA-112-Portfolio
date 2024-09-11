@@ -6,3 +6,27 @@ hikes <- read.csv("https://mac-stat.github.io/data/high_peaks.csv")
 
 head(hikes)
 
+## Adds the actual data
+ggplot(hikes, aes(x = rating)) +
+  geom_bar()
+  
+## Adds the names of the x-axis and y-axis
+ggplot(hikes, aes(x = rating)) +
+  geom_bar() +
+  labs(x = "Rating", y = "Number of hikes")
+
+## Changes the color of the bars to blue
+ggplot(hikes, aes(x = rating)) +
+  geom_bar(fill = "blue") +
+  labs(x = "Rating", y = "Number of hikes")
+
+## Changes the color of the outline of the bars
+ggplot(hikes, aes(x = rating)) +
+  geom_bar(color = "orange", fill = "blue") +
+  labs(x = "Rating", y = "Number of hikes")
+  
+## removes gray outline and exchnages it with white
+ggplot(hikes, aes(x = rating)) +
+  geom_bar(color = "orange", fill = "blue")  +
+  labs(x = "Rating", y = "Number of hikes") +
+  theme_minimal()

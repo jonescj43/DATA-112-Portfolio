@@ -45,7 +45,51 @@
     "href": "activities/activity-03.html",
     "title": "3  Activity 03",
     "section": "",
-    "text": "hikes &lt;- read.csv(“https://mac-stat.github.io/data/high_peaks.csv”)\nhead(hikes)",
+    "text": "3.1 Adds the actual data\nggplot(hikes, aes(x = rating)) + geom_bar()",
+    "crumbs": [
+      "Activities",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Activity 03</span>"
+    ]
+  },
+  {
+    "objectID": "activities/activity-03.html#adds-the-names-of-the-x-axis-and-y-axis",
+    "href": "activities/activity-03.html#adds-the-names-of-the-x-axis-and-y-axis",
+    "title": "3  Activity 03",
+    "section": "3.2 Adds the names of the x-axis and y-axis",
+    "text": "3.2 Adds the names of the x-axis and y-axis\nggplot(hikes, aes(x = rating)) + geom_bar() + labs(x = “Rating”, y = “Number of hikes”)",
+    "crumbs": [
+      "Activities",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Activity 03</span>"
+    ]
+  },
+  {
+    "objectID": "activities/activity-03.html#changes-the-color-of-the-bars-to-blue",
+    "href": "activities/activity-03.html#changes-the-color-of-the-bars-to-blue",
+    "title": "3  Activity 03",
+    "section": "3.3 Changes the color of the bars to blue",
+    "text": "3.3 Changes the color of the bars to blue\nggplot(hikes, aes(x = rating)) + geom_bar(fill = “blue”) + labs(x = “Rating”, y = “Number of hikes”)",
+    "crumbs": [
+      "Activities",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Activity 03</span>"
+    ]
+  },
+  {
+    "objectID": "activities/activity-03.html#changes-the-color-of-the-outline-of-the-bars",
+    "href": "activities/activity-03.html#changes-the-color-of-the-outline-of-the-bars",
+    "title": "3  Activity 03",
+    "section": "3.4 Changes the color of the outline of the bars",
+    "text": "3.4 Changes the color of the outline of the bars\nggplot(hikes, aes(x = rating)) + geom_bar(color = “orange”, fill = “blue”) + labs(x = “Rating”, y = “Number of hikes”)",
+    "crumbs": [
+      "Activities",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Activity 03</span>"
+    ]
+  },
+  {
+    "objectID": "activities/activity-03.html#removes-gray-outline-and-exchnages-it-with-white",
+    "href": "activities/activity-03.html#removes-gray-outline-and-exchnages-it-with-white",
+    "title": "3  Activity 03",
+    "section": "3.5 removes gray outline and exchnages it with white",
+    "text": "3.5 removes gray outline and exchnages it with white\nggplot(hikes, aes(x = rating)) + geom_bar(color = “orange”, fill = “blue”) + labs(x = “Rating”, y = “Number of hikes”) + theme_minimal()",
     "crumbs": [
       "Activities",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Activity 03</span>"
