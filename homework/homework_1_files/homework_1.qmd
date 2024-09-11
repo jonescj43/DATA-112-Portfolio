@@ -1,0 +1,24 @@
+---
+title: "Homework 1"
+number-sections: false
+---
+
+## Exercise 1: Warming up
+ghwfeuidcdsndsn
+
+## Exercise 2: Import tidy data
+
+
+## Exercise 3: Tidy data properties
+
+
+## Exercise 4: Get to know the data
+
+
+## Exercise 5: Data structure
+
+
+## Exercise 6: Your turn
+
+
+## Exercise 7: Brainstorm
