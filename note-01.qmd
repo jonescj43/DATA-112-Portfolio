@@ -4,5 +4,4 @@ editor: visual
 ---
 
 # Ch. 2: RStudio Workshop
-
 ## Date: September 15, 2024
