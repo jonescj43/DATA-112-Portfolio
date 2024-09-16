@@ -1,0 +1,51 @@
+---
+title: "Activity 04"
+---
+
+```{r}
+# Load data
+elections <- read.csv("https://mac-stat.github.io/data/election_2020_county.csv")
+
+# Check it out
+head(elections)
+```
+
+
+# Excercise 1: Qunatitative vs Quantitative Intuiition Check
+
+```{r}
+ggplot(elections, aes(x = repub_pct_16)) +
+  geom_point()
+```
+
+# Excercise 2: Quantitative Variables
+
+```{r}
+# sets up the plotting frame (no data yet)
+ggplot(elections, aes(y = repub_pct_20, x = repub_pct_16))
+```
+
+```{r}
+# "geom_point()" adds the actual data points
+ggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +
+  geom_point()
+```
+
+```{r}
+# "(shape = n)" changes the shape (from dots to a different shape)
+ggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +
+  geom_point(shape = 2)
+```
+
+```{r}
+# "color = 'orange'" changes the color of the data points
+ggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +
+  geom_point(color = "orange")
+```
+
+```{r}
+# "geom_text" adds text instead of points, and "label = state_abbr" is how the code knows what specific text to use
+ggplot(elections, aes(y = repub_pct_20, x = repub_pct_16)) +
+  geom_text(aes(label = state_abbr))
+```
+

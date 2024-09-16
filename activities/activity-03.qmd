@@ -5,7 +5,7 @@ title: "Activity 03"
 hikes <- read.csv("https://mac-stat.github.io/data/high_peaks.csv")
 
 head(hikes)
-
+# Excercise 4
 ## Adds the actual data
 ggplot(hikes, aes(x = rating)) +
   geom_bar()
@@ -30,3 +30,8 @@ ggplot(hikes, aes(x = rating)) +
   geom_bar(color = "orange", fill = "blue")  +
   labs(x = "Rating", y = "Number of hikes") +
   theme_minimal()
+
+# Excercise 5 
+
+### The + is used to add layers to our code and make it modre tidy... labs() stands for labels and it is referring to the labels of the graph such as the x and y axis... color is essentially the border of the bars while fill is the actual bar... 'geom'is used to create a plot
+
