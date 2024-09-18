@@ -1,8 +1,15 @@
 ---
-title: "Activity 05"
+title: "Activity 05-multivariate"
 ---
 
+# Import and check out data
+education <- read.csv("https://mac-stat.github.io/data/sat.csv")
+head(education)
 
+## excercise 1: SAT Scores
 
-
+```{r}
+ggplot(education, aes(x = sat)) +
+  geom_point()
+```
 
