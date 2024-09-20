@@ -1,0 +1,10 @@
+---
+title: "Spatial viz"
+number-sections: true
+execute: 
+  warning: false
+fig-env: 'figure'
+fig-pos: 'h'
+fig-align: center
+code-fold: false
+---

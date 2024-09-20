@@ -16,7 +16,8 @@ book:
       - activities/activity-01.qmd
       - activities/activity-03.qmd
       - activities/activity-04.qmd
-      - activities/activity-05-multivariate.qmd
+      - activities/activity-05.qmd
+      - activities/activity-06.qmd
       
     
     - part: notes/README.qmd

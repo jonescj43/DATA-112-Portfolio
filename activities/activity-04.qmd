@@ -1,6 +1,10 @@
 ---
 title: "Activity 04"
 ---
+```{r}
+library(tidyverse)
+library(ggplot2)
+```
 
 ```{r}
 # Load data
@@ -13,10 +17,6 @@ head(elections)
 
 # Excercise 1: Qunatitative vs Quantitative Intuiition Check
 
-```{r}
-ggplot(elections, aes(x = repub_pct_16)) +
-  geom_point()
-```
 
 # Excercise 2: Quantitative Variables
 
