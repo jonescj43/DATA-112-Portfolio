@@ -1,5 +1,5 @@
 ---
-title: "Spatial viz"
+title: "Activity-06"
 number-sections: true
 execute: 
   warning: false
