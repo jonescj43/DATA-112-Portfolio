@@ -1,3 +1,10 @@
 ---
 title: "Note 01"
 ---
+THIDS IS SOC ERIE JDFJF
+
+```{r}
+y <- 6 + 10
+print(y)
+```
+

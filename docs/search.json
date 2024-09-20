@@ -105,5 +105,16 @@
     "crumbs": [
       "Notes"
     ]
+  },
+  {
+    "objectID": "notes/note-01.html",
+    "href": "notes/note-01.html",
+    "title": "6  Note 01",
+    "section": "",
+    "text": "THIDS IS SOC ERIE JDFJF\n\ny &lt;- 6 + 10\nprint(y)\n\n[1] 16",
+    "crumbs": [
+      "Notes",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Note 01</span>"
+    ]
   }
 ]
